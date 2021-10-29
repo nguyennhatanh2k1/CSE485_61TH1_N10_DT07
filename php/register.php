@@ -6,21 +6,23 @@ error_reporting(0);
 
 session_start();
 
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['pi_account'])) {
     header("Location: index.php");
 }
 
 if (isset($_POST['submit'])) {
+	$yourname = $_POST['name'];
 	$username = $_POST['username'];
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 	$cpassword = md5($_POST['cpassword']);
+	$phonenumber = $_POST['phone_num'];
 
 	if ($password == $cpassword) {
-		$sql = "SELECT * FROM users WHERE email='$email'";
+		$sql = "SELECT * FROM tb_user WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password)
+			$sql = "INSERT INTO tb_user (pi_account, email, password)
 					VALUES ('$username', '$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
@@ -51,7 +53,7 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-duy.css">
 
 	<title>Register Form - Pure Coding</title>
 </head>
@@ -70,6 +72,12 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="input-group">
 				<input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+			</div>
+			<div class="input-group">
+				<input type="password" placeholder="Your Name" name="yname" value="<?php echo $yourname ?>" required>
+			</div>
+			<div class="input-group">
+				<input type="password" placeholder="Phone Number" name="phonenumber" value="<?php echo $_POST['cpassword']; ?>" required>
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Register</button>

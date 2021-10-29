@@ -3,7 +3,7 @@
 $server = "localhost";
 $user = "root";
 $pass = "";
-$database = "test1";
+$database = "db_manage_pi";
 
 $conn = mysqli_connect($server, $user, $pass, $database);
 

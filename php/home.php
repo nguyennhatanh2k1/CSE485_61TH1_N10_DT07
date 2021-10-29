@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="http://fonts.cdnfonts.com/css/kg-happy" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-anh.css">
 
     <title>My Blog !</title>
 </head>
@@ -32,7 +32,7 @@
     <div class="con">
         <div class="main">
             <img src="../img/hinh-nen-4k-tuyet-dep-cho-may-tinh.jpg" alt="">
-            <h1 class="text-center">Đây là body</h1>
+            <h1 class="text-center">Đây là trang quản lí thông tin cá nhân</h1>
         </div>
     </div>
     <div class="con">
