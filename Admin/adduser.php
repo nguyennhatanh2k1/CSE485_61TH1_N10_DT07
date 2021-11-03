@@ -22,13 +22,12 @@
         die('Không kết nối được');
     }
 ?>
-?>
 
 <main class="container mt-5">
     <h2 class="mb-3">Nhập thông tin người dùng:</h2>
     <form action="process_add_user.php" method="post">
         <div class="mb-3 row">
-            <label for="userid" class="col-sm-2 col-form-label">Userid: </label>
+            <label for="userid" class="col-sm-2 col-form-label">User id: </label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="userid" name="userid">
             </div>
@@ -64,8 +63,8 @@
             </div>
         
 
-        <div class="mb-3 row">
-            <button type="submit" class="btn btn-success">Thêm</button>
+        <div class="mb-3 row " style="margin-top:20px; margin-left:400px">
+            <button type="submit" class="btn btn-success " style="width:200px">Thêm</button>
         </div>
     </form>
 </main>
