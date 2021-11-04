@@ -17,7 +17,7 @@
     $useremail = $_POST['useremail'];
     $userpassword = $_POST['userpassword'];
     
-    $pass_hash= password_hash($userpassword,PASSWORD_DEFAULT);
+    $pass_hash= substr ( password_hash($userpassword,PASSWORD_DEFAULT) , 0 , 15 );
     $sql = "insert into users(  userid,first_name, last_name, gender, email, password)
             values( '$userid','$userfname', '$userlname', '$usergender', ' $useremail','$pass_hash ')";
     $result = mysqli_query($con, $sql);

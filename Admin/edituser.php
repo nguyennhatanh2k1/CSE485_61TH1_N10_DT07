@@ -28,7 +28,7 @@
     ?>
 
 <main class="container mt-5">
-    <h2 class="mb-3">Nhập thông tin người dùng:</h2>
+    <h2 class="mb-3">Nhập thông tin chỉnh sửa người dùng:</h2>
     
     <form action="" method="post">  
         <div class="mb-3 row">
@@ -87,7 +87,7 @@
         // echo $usergender."<br>";
         // echo $useremail."<br>";
         // echo $userpassword."<br>";
-        $pass_hash= password_hash($userpassword,PASSWORD_DEFAULT);
+        $pass_hash= substr ( password_hash($userpassword,PASSWORD_DEFAULT) , 0 , 15 );
         $sql_update = "update users set  userid = '$userid',first_name = '$userfname', last_name = '$userlname', gender = '$usergender', email = '$useremail', password ='$pass_hash' where id = '$id'";
         $result_update = mysqli_query($con, $sql_update);
 

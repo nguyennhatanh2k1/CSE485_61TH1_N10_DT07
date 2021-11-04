@@ -14,7 +14,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['loginSuccess'])) {
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
 ?>
 
