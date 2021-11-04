@@ -37,7 +37,7 @@
             <!-- <div class="main-title "><h1 class="">TRANG QUẢN LÍ THÔNG TIN CÁ NHÂN</h1></div> -->
         </div>
     </div>
-    <div class="con">
+    <div class="con footer">
         <footer>
             <h3 class="text-center" style="margin: auto; padding-top:20px;">The project was designed by :</h3>
             <ul class="nav justify-content-center border-bottom">
