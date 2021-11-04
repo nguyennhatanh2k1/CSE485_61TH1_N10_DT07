@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.none-decoration {
+    text-decoration: none;
+    list-style: none;
+}
+
+.con {
+    width: 100%;
+    /* border: yellow 3px solid; */
+}
+
+.kg-happy {
+    font-family: 'KG HAPPY', sans-serif;
+}
+
+.kg-happy-shadow {
+    font-family: 'KG HAPPY Shadows', sans-serif;
+}
+
+.kg-happy-solid {
+    font-family: 'KG HAPPY Solid', sans-serif;
+}
+
+
+/* nav */
+
+.nav {
+    width: 100%;
+    justify-content: space-between;
+    /* padding: 20px; */
+    /* border: rgb(255, 0, 0) 2px solid; */
+}
+
+.nav-log {
+    margin: auto 0;
+    /* border: red 2px solid; */
+    font-size: 1.5rem;
+}
+
+.nav-log a:hover {
+    color: rgb(116, 116, 173);
+}
+
+.nav-logo-img {
+    width: 70px;
+}
+
+.nav-title h1 {
+    /* border: blue 2px solid; */
+    font-size: 3rem;
+}
+
+
+/* body */
+
+.main {
+    justify-content: center;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main-img {
+    width: 100%;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 100px;
+}
