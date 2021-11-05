@@ -332,7 +332,7 @@ if (isset($_GET['notif'])) {
 				echo '<a href="profile.php?section=settings&id=' . $user_data['userid'] . '"><div id="menu_buttons">Settings</div></a>';
 			}
 			?>
-				<a href="../myblog/Admin/login.php">
+				<a href="././Admin/login.php">
 					<div  id="menu_buttons">Admin</div>
 				</a>
 		</div>
